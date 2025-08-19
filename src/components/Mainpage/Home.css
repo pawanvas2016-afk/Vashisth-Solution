@@ -1,0 +1,140 @@
+.adjhomupa{
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    background:#f8f9fa;
+    padding:2rem;
+    border-radius:10px;
+    margin-bottom:2rem;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1)
+}
+
+.adjhomupb{
+   display: flex;
+    justify-content:space-between;
+    align-items:center;
+    background:#f8f9fa;
+    padding:2rem;
+    border-radius:10px;
+    margin-bottom:2rem;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1)
+}
+
+.a{
+    width: 65%;
+    text-align: center;
+}
+
+ .b{
+    width: 30;
+    text-align: center;
+ }
+
+
+
+@media (width < 850px){
+.adjhomupa{
+  flex-direction: column;
+  padding: 8px;
+  margin-bottom:1rem;
+  padding: 3px;
+}
+
+.adjhomupb{
+    flex-direction: column-reverse;
+}
+
+.a , .b {
+    width: 90%;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Jobs Section */
+.jobs {
+  margin: 4rem 0;
+  width: 100%;
+}
+
+.jobs h2 {
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  text-align: center;
+  font-weight: bold;
+  color: #212529;
+  position: relative;
+}
+
+.jobs h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #007bff;
+  margin: 0.5rem auto 0;
+  border-radius: 2px;
+}
+
+/* Job List as full-width rows */
+.job-list {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 1rem;
+}
+
+/* Each Job Row */
+.job-card {
+  display: flex;
+  flex-direction: column;
+  background: #f8f9fa;
+  border-bottom: 2px solid #e9ecef;
+  padding: 1.2rem 2rem;
+  width: 100%;
+  transition: background 0.3s ease;
+}
+
+.job-card:hover {
+  background: #eef4ff;
+}
+
+/* Job Title */
+.job-card h3 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #007bff;
+}
+
+.job-card span {
+  color: #212529;
+  font-weight: 600;
+}
+
+/* Job Details (inline style for full width use) */
+.job-card p {
+  margin: 0.3rem 0;
+  font-size: 0.95rem;
+  color: #495057;
+  line-height: 1.4;
+}
+
+.job-card .fees {
+  margin-top: 0.6rem;
+  font-weight: bold;
+  color: #dc3545;
+  font-size: 1rem;
+}
